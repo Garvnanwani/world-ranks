@@ -4,7 +4,7 @@ import {
 } from '@material-ui/icons'
 import Link from 'next/link'
 import { useState } from 'react'
-import styles from './CountriesTable.module.css'
+import styles from './CountryTable.module.css'
 
 const orderBy = (countries, value, direction) => {
     if (direction === 'asc') {
@@ -38,7 +38,7 @@ const SortArrow = ({ direction }) => {
     }
 }
 
-const CountriesTable = ({ countries }) => {
+const CountryTable = ({ countries }) => {
     const [direction, setDirection] = useState()
     const [value, setValue] = useState()
 
@@ -130,4 +130,4 @@ const CountriesTable = ({ countries }) => {
     )
 }
 
-export default CountriesTable
+export default CountryTable
